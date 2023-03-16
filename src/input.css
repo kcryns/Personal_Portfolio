@@ -15,20 +15,86 @@
         background-color: white;
         display: block;
         border-radius: .5rem;
+        transition: 300ms;
     }
     .toggle__menu span:nth-child(2){
         margin: .2rem 0;
     }
+    .toggle__menu.open span:first-child{
+        @apply translate-x-0 translate-y-[10px] rotate-[225deg] ease-out duration-[.5];
+    }
+    .toggle__menu.open span:nth-child(2){
+        @apply opacity-0;
+    }
+    .toggle__menu.open span:last-child{
+        @apply translate-x-0 translate-y-[-3px] rotate-[-225deg] ease-out duration-[.5];
+    }
 
     .header__nav ul{
-        @apply absolute bg-dark right-0 top-0 w-0 h-[100vh] overflow-hidden p-0;
+        @apply absolute bg-dark right-0 top-0 w-0 h-[100vh] overflow-hidden p-0 z-[1] lg:static lg:w-full lg:h-auto;
+    }
+    .header__nav ul li:not(:first-child),.header__nav ul li:not(:last-child){
+        @apply mx-[1rem]
     }
     .header__nav ul.open{
         @apply  w-[25rem] h-[100vh] p-[2rem];
     }
-  }
-/* @layer base{
-    .container{
-        @apply p-[1.5rem] max-w-[140rem] mx-auto
+    .arjay.open{
+        @apply w-full
     }
-} */
+    .btn{
+        @apply inline-block py-[.5rem] px-[1.5rem]
+    }
+    .premium__card{
+        @apply flex items-center my-[5rem] lg:flex-col lg:my-[unset]
+    }
+
+    .premium__card img{
+        @apply w-[6rem] mr-[1.2rem] lg:w-[8rem] lg:mb-[2rem]
+    }
+    .card__text{
+        @apply lg:text-center
+    }
+    .card__text h3{
+        @apply font-bold text-[1.2rem]
+    }
+    .card__text p{
+        @apply  text-[1rem] mt-[1rem]
+    }
+    .pick__header ul li{
+        @apply px-[.2rem]
+    }
+    .pick__header ul li img{
+        @apply w-[2rem]
+    }
+    .topcard span{
+        @apply bg-[#0D72EA] rounded-[5px] text-[.8rem] font-bold text-[#ffffff] py-[.2rem] px-[.5rem]
+    }
+    .topcard h3{
+        @apply text-[1.5rem] font-bold
+    }
+    .topcard p{
+        @apply text-[1rem] w-[14rem]
+    }
+    .check{
+        @apply lg:h-[17rem]
+    }
+    .check p{
+        @apply text-[1rem] leading-[2rem] 
+    }
+    .check p i{
+        @apply mr-[1rem]
+    }
+    .drop__item{
+        @apply py-[2rem]
+    }
+    .drop__item ul li{
+        @apply py-[.5rem]
+    }
+    .drop__item h4{
+        @apply text-[#ffffff] opacity-60
+    }
+    .drop__item ul li a{
+        @apply text-[#ffffff] hover:text-[#1ED760]
+    }
+  }
