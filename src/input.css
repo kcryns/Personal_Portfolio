@@ -129,4 +129,64 @@
     .legal ul li a{
         @apply text-[#8F8F8F] text-[10px] leading-[2rem] hover:text-green lg:text-[12px]
     }
+
+
+
+    .toggle__menu2 span{
+        width: 1.5rem;
+        height: .2rem;
+        background-color: white;
+        display: block;
+        border-radius: 2px;
+        transition: 300ms;    
+    }
+    .toggle__menu2 span:nth-child(2){
+        margin: .3rem 0;
+    }
+    .toggle__menu2.open span:first-child{
+        @apply translate-x-0 translate-y-[10px] rotate-[-45deg] ease-out duration-[.5];
+    }
+    .toggle__menu2.open span:nth-child(2){
+        @apply opacity-0;
+    }
+    .toggle__menu2.open span:last-child{
+        @apply translate-x-0 translate-y-[-6px] rotate-[45deg] ease-out duration-[.5];
+    }
+    .navigation ul{
+        @apply bg-[#222326] w-[100%] left-0 top-[5rem] h-0 overflow-hidden
+    }
+    .navigation ul.open{
+        @apply h-[30rem]
+    }
+    .navigation ul li{
+        @apply h-[5rem] flex items-center border-[1px] border-[#8F8F8F]
+    }
+    .navigation ul li a{
+        @apply text-[#ffffff] hover:text-green mx-[2rem]
+    }
+    .active{
+        @apply border-b-2 border-green
+    }
+    .navigation2 ul li a{
+        @apply text-[#ffffff] hover:text-green text-[14px]
+    }
+    .navigation2 ul li{
+        @apply ml-[4.5rem]
+    }
+
+
+
+    .circle{
+        @apply w-[7.5rem] text-center hover:opacity-[.9]
+    }
+    .circle a{
+        @apply text-[1rem] font-semibold 
+    }
+    .platform__content .backg{
+        @apply w-[7.5rem] h-[7.5rem] mb-[1.2rem] rounded-full flex justify-center items-center
+    }
+    .platform__content .backg img{
+        @apply w-[4rem]
+    }
+    
   }
