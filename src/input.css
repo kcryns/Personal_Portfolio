@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .container{
+ 
     width: 100%;
     margin: 0 auto;
     padding: 1.5rem;
@@ -77,7 +78,7 @@
         @apply text-[1rem] w-[14rem]
     }
     .check{
-        @apply lg:h-[17rem]
+        @apply lg:h-[20rem]
     }
     .check p{
         @apply text-[1rem] leading-[2rem] 
@@ -85,8 +86,11 @@
     .check p i{
         @apply mr-[1rem]
     }
+
+
+
     .drop__item{
-        @apply py-[2rem]
+        @apply py-[1rem]
     }
     .drop__item ul li{
         @apply py-[.5rem]
@@ -94,7 +98,35 @@
     .drop__item h4{
         @apply text-[#ffffff] opacity-60
     }
+    .drop__item h4 i{
+        @apply lg:hidden
+    }
+    .drop__item h4 i.open{
+        @apply rotate-[-180deg] ease-in duration-[300ms]
+    }
     .drop__item ul li a{
         @apply text-[#ffffff] hover:text-[#1ED760]
+    }
+    .drop__item ul{
+        @apply max-h-0 overflow-hidden ml-[2rem] ease-in duration-[300ms] lg:max-h-[25rem] lg:ml-[unset]
+    }
+    .drop__item ul.open{
+        @apply max-h-[25rem] ease-in duration-[300ms]
+    }
+    .drop__item ul li{
+        @apply p-[1rem]  lg:px-[unset]
+    }
+    .soc__icon ul a{
+        @apply flex justify-center items-center w-[3rem] h-[3rem] mr-[1rem] rounded-full bg-[#222326] cursor-pointer my-[3rem] lg:my-[unset]
+    }
+
+    .soc__icon ul i{
+        @apply text-white hover:text-green text-[1.5rem]
+    }
+    .legal ul li{
+        @apply mr-[2rem]
+    }
+    .legal ul li a{
+        @apply text-[#8F8F8F] text-[10px] leading-[2rem] hover:text-green lg:text-[12px]
     }
   }

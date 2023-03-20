@@ -11,7 +11,7 @@
 <body>
     <div class="arjay absolute w-0 h-[100vh] bg-dark opacity-[.7] z-[1]"></div>
 <header class="header bg-dark relative">
-    <div class="container">
+    <div class="container lg:max-w-[80rem]">
         <div class="header__wrapper flex items-center justify-between">
             <div class="branding">
                 <img src="./img/logofinal.png" alt="" class="w-[8rem]">
@@ -37,7 +37,7 @@
     </div>
 </header>
 <section class="banner bg-[#056952]">
-    <div class="container">
+    <div class="container lg:max-w-[80rem]">
         <div class="banner__wrapper lg:flex lg:items-center lg:gap-[2rem] lg:py-[2rem]">
             <div class="banner__text">
                 <h1 class="text-[#C5F0C9] text-[1.7rem] font-bold leading-[1] my-[2.5rem] lg:text-[3rem]">Get Premium free for 2 months</h1>
@@ -46,14 +46,14 @@
                     <li class="mb-[1rem] lg:w-[10rem] lg:mb-[unset]"><a href="" class="btn py-[1rem] text-[#C5F0C9] bg-[#191414] rounded-full text-[.8rem] font-bold w-full text-center hover:bg-black hover:scale-105">GET STARTED</a></li>
                     <li class="lg:w-[10rem] lg:ml-[1rem]"><a href="" class="btn py-[1rem] text-[#C5F0C9] bg-transparent border-[2px] borrder-[#C5F0C9] rounded-full text-[.8rem] font-bold font-bold w-full text-center hover:bg-[rgb(0,0,0,.2)] hover:scale-105">VIEW PLANS</a></li>
                 </ul>
-                <p class="text-[#C5F0C9] text-[.7rem] lg:text-[.7rem]"><a href="" class="underline">Terms and conditions apply.</a> Monthly subscription fee applies after. 2 months free only open to users who haven't already tried Premium. Offer ends March 31, 2023.</p>
+                <p class="text-[#C5F0C9] text-[.7rem] lg:text-[.7rem] lg:max-w-[40rem]"><a href="" class="underline">Terms and conditions apply.</a> Monthly subscription fee applies after. 2 months free only open to users who haven't already tried Premium. Offer ends March 31, 2023.</p>
             </div>
             <img src="./img/banner.jpg" alt="" class="my-[5rem] w-[21rem] mx-auto lg:w-[30%]">
         </div>
     </div>
 </section>
 <section class="premium">
-    <div class="container">
+    <div class="container lg:max-w-[80rem]">
         <div class="premium__wrapper lg:my-[3rem]">
             <h2 class="text-[1.9rem] font-bold text-center lg:text-[2.5rem] lg:mb-[5rem]">Why go Premium?</h2>
             <div class="cards lg:grid lg:grid-cols-4">
@@ -90,10 +90,10 @@
     </div>
 </section>
 <section class="pick bg-[#efefef]">
-    <div class="container">
+    <div class="container lg:max-w-[80rem]">
         <div class="pick__wrapper">
             <div class="pick__header text-center">
-                <h2 class="text-[1.9rem] font-bold">Pick your Premium</h2>
+                <h2 class="text-[1.9rem] font-bold lg:text-[2.5rem]">Pick your Premium</h2>
                 <p class="text-[1rem] leading-[1] my-[1rem]">Listen without limits on your phone, speaker, and other devices.</p>
                 <ul class="flex items-center justify-center">
                     <li><img src="./img/c1.svg" alt=""></li>
@@ -176,12 +176,13 @@
     </div>
 </section>
 <footer class="footer bg-black" >
-    <div class="container">
+    <div class="container lg:max-w-[80rem]">
         <div class="footer__wrapper">
-            <img src="./img/logofinal.png" alt="" class="w-[6rem] py-[1rem]">
-            <div class="drop">
+            <div class="drop__nav lg:flex lg:justify-between lg:items-start">
+            <img src="./img/logofinal.png" alt="" class="w-[6rem] py-[1rem] lg:h-[fit-content] lg:w-[8rem]">
+            <div class="drop lg:grid lg:grid-cols-3 lg:mr-[18rem] lg:gap-[5rem]">
                 <div class="drop__item">
-                    <h4 class="flex justify-between"><span>COMPANY</span><i class="fa-solid fa-chevron-down"></i></h4>
+                    <h4 class="flex justify-between"><span>COMPANY</span><i class="fa-solid fa-chevron-down ease-in duration-[300ms]"></i></h4>
                     <ul>
                         <li><a href="">About</a></li>
                         <li><a href="">Jobs</a></li>
@@ -189,7 +190,7 @@
                     </ul>
                 </div>
                 <div class="drop__item">
-                    <h4 class="flex justify-between"><span>COMMUNITIES</span><i class="fa-solid fa-chevron-down"></i></h4>
+                    <h4 class="flex justify-between"><span>COMMUNITIES</span><i class="fa-solid fa-chevron-down ease-in duration-[300ms]"></i></h4>
                     <ul>
                         <li><a href="">For Artist</a></li>
                         <li><a href="">Developers</a></li>
@@ -199,7 +200,7 @@
                     </ul>
                 </div>
                 <div class="drop__item">
-                    <h4 class="flex justify-between"><span>COMPANY</span><i class="fa-solid fa-chevron-down"></i></h4>
+                    <h4 class="flex justify-between"><span>COMPANY</span><i class="fa-solid fa-chevron-down ease-in duration-[300ms]"></i></h4>
                     <ul>
                         <li><a href="">Support</a></li>
                         <li><a href="">Web Player</a></li>
@@ -207,82 +208,32 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
-<!-- <footer class="bg-black py-[2rem] lg:px-[20rem]">
-    <div class="container relative">
-       
-        <div class="footer__wrapper flex flex-col gap-6 lg:flex-row">
-           <div class="image">
-            <img src="./img/logofinal.png" class="w-[100px] pl-[1rem] pb-[3rem]" alt="">
+            <div class="soc__icon">
+                <ul class="flex">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </ul>
             </div>
-
-                <div class="footer__link ">
-                    <div class="title">
-                        <h5 class="cursor-pointer text-[white] flex justify-between items-center"><span>COMPANY</span><i class="fa-solid fa-chevron-down"></i></h5>    
-                    </div>
-                      <div class="ul__links  px-5">
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Jobs</a></li>
-                            <li><a href="#">For the Record</a></li>
-                        </ul>
-                      </div>
-                </div>
-                <div class="footer__link ">
-                    <div class="title">
-                        <h5 class="cursor-pointer text-[white] flex justify-between items-center"><span>COMMUNITY</span><i class="fa-solid fa-chevron-down"></i></h5>
-                    </div>
-                      <div class="ul__links px-5">
-                        <ul>
-                            <li><a href="#">For Artists</a></li>
-                            <li><a href="#">Developers</a></li>
-                            <li><a href="#">Advertising</a></li>
-                            <li><a href="#">Investors</a></li>
-                            <li><a href="#">Vendors</a></li>
-                        </ul>
-                      </div>
-                </div>
-                <div class="footer__link ">
-                    <div class="title">
-                        <h5 class="cursor-pointer text-[white] flex justify-between items-center"><span>USEFULL LINKS</span><i class="fa-solid fa-chevron-down"></i></h5>     
-                    </div>
-                      <div class="ul__links px-5">
-                        <ul>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Web Player</a></li>
-                            <li><a href="#">Free Mobile App</a></li>
-                            
-                        </ul>
-                      </div>
-                </div>
         </div>
-        <div class="footer__icons lg:absolute lg:right-[2px] lg:top-[-1px]">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-            
+        <div class="usa flex justify-end py-[1rem]">
+            <p class="text-[#8F8F8F] text-[10px] lg:text-[12px]"><i class="fa-solid fa-earth-europe"></i><a href="" class="ml-[.5rem] hover:text-[#1ED760]">USA</a></p>
         </div>
-
-        <div class="terms__links flex justify-between px-[1rem] py-[2rem]">
-            <ul class="flex text-[white] text-[.6rem] gap-5">
+        <div class="legal flex justify-between items-start">
+            <ul class="flex items-center max-w-[20rem] flex-wrap lg:max-w-[unset]">
                 <li><a href="">Legal</a></li>
                 <li><a href="">Privacy Center</a></li>
                 <li><a href="">Privacy Policy</a></li>
                 <li><a href="">Cookies</a></li>
-                <li><a href="">About Ads</a></li>
-                
-                
+                <li><a href="">About adds</a></li>
+                <li class="flex items-center"><a href=""><p class="text-[13px]">Cookies Settings</p></a> <i class="fa-solid fa-toggle-off text-blue ml-[.5rem]"></i></li>
             </ul>
-            <div class="usa flex flex-col text-[white] text-[.6rem]">
-                    <li class="hover:text-[green]"><a href="">© 2023 Spotify AB</a></li>
-                </div>
+            <p class="text-[#8F8F8F] text-[10px] leading-[2rem] lg:text-[12px]">© 2023 Spotify AB</p>
         </div>
-
-        <p class="text-[white] hover:text-[green] text-[.7rem] pl-[1rem]">Cookies Settings</p>
+        </div>
     </div>
-</footer> -->
+</footer>
+
 <script src="./script.js"></script>
 </body>
 </html>

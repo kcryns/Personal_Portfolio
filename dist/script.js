@@ -8,7 +8,7 @@ toggleMenu.addEventListener("click", () => {
   arjay.classList.toggle("open");
 });
 
-const kamote = document.querySelectorAll('.title');
+const kamote = document.querySelectorAll('.drop__item h4');
 kamote.forEach((kamoteq) => {
     kamoteq.addEventListener('click', () => {
         kamoteq.nextElementSibling.classList.toggle('open');
