@@ -159,10 +159,13 @@
         @apply h-[30rem]
     }
     .navigation ul li{
-        @apply h-[5rem] flex items-center border-[1px] border-[#8F8F8F]
+        @apply h-[5rem] flex items-center border-[1px] border-[#8F8F8F] cursor-pointer
+    }
+    .navigation ul li:hover a{
+        @apply text-green
     }
     .navigation ul li a{
-        @apply text-[#ffffff] hover:text-green mx-[2rem]
+        @apply text-[#ffffff] mx-[2rem]
     }
     .active{
         @apply border-b-2 border-green
