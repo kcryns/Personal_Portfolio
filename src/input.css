@@ -173,8 +173,9 @@
     .navigation2 ul li a{
         @apply text-[#ffffff] text-[14px]
     }
+    
     .navigation2 ul li{
-        @apply ml-[4.5rem] lg:py-[1.5rem]
+        @apply ml-[4.5rem] lg:py-[1.5rem]  cursor-pointer
     }
 
 
@@ -196,7 +197,7 @@
         @apply bg-[#222326] top-[4.5rem] left-[0] w-[120rem] h-0 overflow-hidden
     }
     .docs:hover .docs__content{
-        @apply h-[20rem] ease-in duration-[300ms]
+        @apply h-[20rem] ease-in duration-[200ms]
     }
     .content__group ul li{
         @apply ml-[unset] py-[unset]
@@ -206,14 +207,14 @@
         @apply bg-[#222326] top-[4.5rem] left-[0] w-[120rem] h-0 overflow-hidden
     }
     .community:hover .community__content{
-        @apply h-[10rem] ease-in duration-[300ms]
+        @apply h-[10rem] ease-in duration-[200ms]
     }
 
     .use__content{
         @apply bg-[#222326] top-[4.5rem] left-[0] w-[120rem] h-0 overflow-hidden
     }
     .use:hover .use__content{
-        @apply h-[17rem] ease-in duration-[300ms]
+        @apply h-[17rem] ease-in duration-[200ms]
     }
 
 
@@ -240,5 +241,9 @@
     }
     .explore__content{
         @apply lg:max-w-[35rem]
+    }
+
+    .hatdog.open{
+        @apply block
     }
   }

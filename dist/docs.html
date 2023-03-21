@@ -17,9 +17,9 @@
                 <img src="./img/developers-logo.svg" alt="" class="w-[15rem]">
                 <div class="navigation2 hidden lg:flex">
                     <ul class="flex items-center">
-                        <li><a href="" class="hover:text-[#1db954]">DISCOVER</a></li>
+                        <li class="group-hover:"><a href="" class="hover:text-[#1db954]">DISCOVER</a></li>
                         <li class="docs "><a href="" class=" hover:text-[#1db954] active">DOCS</a>
-                        <div class="docs__content absolute ease-in duration-[300ms]">
+                        <div class="docs__content absolute ease-in duration-[200ms]">
                             <div class="main__group p-[3rem] flex justify-start gap-[5rem]">
                             <div class="content__group max-w-[8rem]">
                                 <img src="./img/green2.svg" alt="" class="">
@@ -102,7 +102,7 @@
                         </li>
                         <li><a href="" class="hover:text-[#1db954]">CONSOLE</a></li>
                         <li class="community"><a href="" class="hover:text-[#1db954]">COMMUNITY</a>
-                        <div class="community__content absolute ease-in duration-[300ms]">
+                        <div class="community__content absolute ease-in duration-[200ms]">
                             <div class="main__group p-[3rem] flex justify-start gap-[5rem]">
                                 <div class="content__group max-w-[8rem]">
                                     <img src="./img/green2.svg" alt="" class="">
@@ -121,7 +121,7 @@
                         </li>
                         <li><a href="" class="hover:text-[#1db954]">DASHBOARD</a></li>
                         <li class="use"><a href="" class="hover:text-[#1db954]">USE CASES</a>
-                            <div class="use__content absolute ease-in duration-[300ms]">
+                            <div class="use__content absolute ease-in duration-[200ms]">
                                 <div class="main__group p-[3rem] flex justify-start gap-[5rem]">
                                     <div class="content__group max-w-[8rem]">
                                         <img src="./img/green3.svg" alt="" class="">
@@ -149,7 +149,16 @@
                 </div>
             </div>
                 <div class="right flex items-center">
-                    <i class="fa-solid fa-magnifying-glass text-white text-[1.3rem] mr-[1rem]"></i>
+                    <i class="search__icon fa-solid fa-magnifying-glass text-white text-[1.3rem] mr-[1rem] cursor-pointer"></i>
+                    <div class="hatdog fixed top-0 left-0 w-full h-full z-[999] hidden">
+                    <div class="search absolute top-0 left-0 w-full h-[100vh] bg-black p-[1.5rem] ">
+                        <div class="search__logo flex justify-between items-center">
+                            <img src="./img/developers-logo.svg" alt="" class="w-[20rem]">
+                            <i class="ekis fa-solid fa-xmark text-white text-[3rem] cursor-pointer"></i>
+                        </div>
+                        <input type="text" placeholder="Type Your Search" class="bg-black text-white outline-none w-[100%] py-[3rem] text-[2rem] placeholder:text-[2rem] placeholder:font-bold">
+                    </div>
+                </div>
                     <div class="toggle__menu2 cursor-pointer lg:hidden">
                         <span></span>
                         <span></span>
