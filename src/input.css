@@ -168,7 +168,7 @@
         @apply border-b-2 border-green
     }
     .navigation2 ul li a{
-        @apply text-[#ffffff] hover:text-green text-[14px]
+        @apply text-[#ffffff] text-[14px]
     }
     .navigation2 ul li{
         @apply ml-[4.5rem] lg:py-[1.5rem]
@@ -224,12 +224,18 @@
         @apply text-[1rem]
     }
     .explore__icon span{
-        @apply text-[14px] font-bold 
+        @apply text-[14px] font-bold text-center
     }
     .explore__icon img{
         @apply mx-auto w-[2.5rem]
     }
+    .explore__icon a{
+        @apply hover:opacity-[.8]
+    }
     .explore__content h2{
         @apply lg:text-[3rem] text-[#222326]
+    }
+    .explore__content{
+        @apply lg:max-w-[35rem]
     }
   }
