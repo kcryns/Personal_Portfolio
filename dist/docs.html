@@ -10,19 +10,143 @@
     <link rel="shortcut icon" href="./img/hatdog.png" type="image/x-icon">
 </head>
 <body>
-    <section class="document__header bg-black">
-        <div class="container lg:max-w-[150rem]">
+    <section class="document__header relative bg-black">
+        <div class="container lg:max-w-[150rem] lg:py-[unset]">
             <div class="document__header__wrapper flex justify-between items-center">
                 <div class="logo__nav lg:flex">
                 <img src="./img/developers-logo.svg" alt="" class="w-[15rem]">
                 <div class="navigation2 hidden lg:flex">
                     <ul class="flex items-center">
                         <li><a href="">DISCOVER</a></li>
-                        <li><a href="" class="active">DOCS</a></li>
+                        <li class="docs "><a href="" class="active">DOCS</a>
+                        <div class="docs__content absolute ease-in duration-[300ms]">
+                            <div class="main__group p-[3rem] flex justify-start gap-[5rem]">
+                            <div class="content__group max-w-[8rem]">
+                                <img src="./img/embeded.svg" alt="" class="">
+                                <h2 class="text-[#fff] font-bold py-[8px]">GENERAL</h2>
+                                <ul>
+                                    <li><a href="">Development</a></li>
+                                    <li><a href="">Guides</a></li>
+                                    <li><a href="">Design</a></li>
+                                    <li><a href="">Guidelines</a></li>
+                                    <li><a href="">Accessibility</a></li>
+                                    <li><a href="">Guides</a></li>
+                                </ul>
+                            </div>
+                            <div class="content__group max-w-[8rem]">
+                                <img src="./img/embeded.svg" alt="" class="">
+                                <h2 class="text-[#fff] font-bold py-[8px]">WEB API</h2>
+                                <ul>
+                                    <li><a href="">Quick Start</a></li>
+                                    <li><a href="">Guides</a></li>
+                                    <li><a href="">Libraries</a></li>
+                                    <li><a href="">Reference</a></li>
+                                </ul>
+                            </div>
+                            <div class="content__group max-w-[8rem]">
+                                <img src="./img/embeded.svg" alt="" class="">
+                                <h2 class="text-[#fff] font-bold py-[8px]">WEB PLAYBACK SDK</h2>
+                                <ul>
+                                    <li><a href="">Quick Start</a></li>
+                                    <li><a href="">Guides</a></li>
+                                    <li><a href="">Reference</a></li>
+                                </ul>
+                            </div>
+                            <div class="content__group max-w-[8rem]">
+                                <img src="./img/embeded.svg" alt="" class="">
+                                <h2 class="text-[#fff] font-bold py-[8px]">ADS API</h2>
+                                <ul>
+                                    <li><a href="">Quick Start</a></li>
+                                    <li><a href="">Guides</a></li>
+                                    <li><a href="">Reference</a></li>
+                                </ul>
+                            </div>
+                            <div class="content__group max-w-[8rem]">
+                                <img src="./img/embeded.svg" alt="" class="">
+                                <h2 class="text-[#fff] font-bold py-[8px]">IOS</h2>
+                                <ul>
+                                    <li><a href="">Quick Start</a></li>
+                                    <li><a href="">Guides</a></li>
+                                    <li><a href="">Reference</a></li>
+                                    <li><a href="">Download</a></li>
+                                </ul>
+                            </div>
+                            <div class="content__group max-w-[8rem]">
+                                <img src="./img/embeded.svg" alt="" class="">
+                                <h2 class="text-[#fff] font-bold py-[8px]">ANDROID</h2>
+                                <ul>
+                                    <li><a href="">Quick Start</a></li>
+                                    <li><a href="">Guides</a></li>
+                                    <li><a href="">Reference</a></li>
+                                    <li><a href="">Download</a></li>
+                                </ul>
+                            </div>
+                            <div class="content__group max-w-[8rem]">
+                                <img src="./img/embeded.svg" alt="" class="">
+                                <h2 class="text-[#fff] font-bold py-[8px]">EMBEDS</h2>
+                                <ul>
+                                    <li><a href="">Guides</a></li>
+                                    <li><a href="">Reference</a></li>
+                                    <li><a href="">Terms</a></li>
+                                </ul>
+                            </div>
+                            <div class="content__group max-w-[8rem]">
+                                <img src="./img/embeded.svg" alt="" class="">
+                                <h2 class="text-[#fff] font-bold py-[8px]">COMMERCIAL HARDWARE</h2>
+                                <ul>
+                                    <li><a href="">Onboarding</a></li>
+                                    <li><a href="">Implementation</a></li>
+                                    <li><a href="">Launch</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        </li>
                         <li><a href="">CONSOLE</a></li>
-                        <li><a href="">COMMUNITY</a></li>
+                        <li class="community"><a href="">COMMUNITY</a>
+                        <div class="community__content absolute ease-in duration-[300ms]">
+                            <div class="main__group p-[3rem] flex justify-start gap-[5rem]">
+                                <div class="content__group max-w-[8rem]">
+                                    <img src="./img/Web_api.svg" alt="" class="">
+                                    <h2 class="text-[#fff] font-bold py-[8px]">NEWS</h2>
+                                </div>
+                                <div class="content__group max-w-[8rem]">
+                                    <img src="./img/Web_api.svg" alt="" class="">
+                                    <h2 class="text-[#fff] font-bold py-[8px]">FORUM</h2>
+                                </div>
+                                <div class="content__group max-w-[8rem]">
+                                    <img src="./img/Web_api.svg" alt="" class="">
+                                    <h2 class="text-[#fff] font-bold py-[8px]">SHOWCASE</h2>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
                         <li><a href="">DASHBOARD</a></li>
-                        <li><a href="">USE CASES</a></li>
+                        <li class="use"><a href="">USE CASES</a>
+                            <div class="use__content absolute ease-in duration-[300ms]">
+                                <div class="main__group p-[3rem] flex justify-start gap-[5rem]">
+                                    <div class="content__group max-w-[8rem]">
+                                        <img src="./img/android.svg" alt="" class="">
+                                        <h2 class="text-[#fff] font-bold py-[8px]">MOBILE APPS</h2>
+                                        <ul>
+                                            <li><a href="">Messaging</a></li>
+                                            <li><a href="">Connection</a></li>
+                                            <li><a href="">Flow</a></li>
+                                            <li><a href="">Content</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="content__group max-w-[8rem]">
+                                        <img src="./img/android.svg" alt="" class="">
+                                        <h2 class="text-[#fff] font-bold py-[8px]">HARDWARE</h2>
+                                        <ul>
+                                            <li><a href="">Voice</a></li>
+                                            <li><a href="">Integration</a></li>
+                                            <li><a href="">News & Emerging</a></li>
+                                            <li><a href="">Wearables</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div></li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +171,7 @@
             <li><a href="">USE CASES</a></li>
         </ul>
     </div>
-    <section class="platform bg-white">
+    <section class="platform bg-[#F8F8F8]">
         <div class="container">
             <div class="platform__wrapper lg:py-[3rem]">
                 <div class="platform__text lg:max-w-[43rem]">
@@ -69,13 +193,13 @@
                     </div>
                     <div class="circle hover:text-[#b49bc8]">
                         <div class="backg bg-[#B49BC8]">
-                            <img src="./img/ads_api.svg" alt="">
+                            <img src="./img/android.svg" alt="">
                         </div>
                         <a href="">ADS API</a>
                     </div>
                     <div class="circle hover:text-[#509bf5]">
                         <div class="backg bg-[#509bf5]">
-                            <img src="./img/IOS.svg" alt="">
+                            <img src="./img/android.svg" alt="">
                         </div>
                         <a href="">IOS</a>
                     </div>
@@ -96,6 +220,64 @@
                             <img src="./img/commercial.svg" alt="">
                         </div>
                         <a href="">COMMERCIAL HARDWARE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore bg-white">
+        <div class="container">
+            <div class="explore__wrapper">
+                <h3 class="text-[#222326] text-[1.3rem] font-bold text-center py-[1.5rem] border-b-2 border-[#8F8F8F] w-[27rem] mx-auto lg:text-[1.5rem] lg:w-[35rem]">EXPLORE BY FEATURE</h3>
+                <div class="explore__card py-[3rem] lg:flex lg:justify-between lg:flex-wrap">
+                    <div class="explore__content">
+                        <h2>Music Playback</h2>
+                        <p>Let them play! Give users built-in music playback using our API and SDKs.</p>
+                        <div class="explore__icon py-[3rem]">
+                            <ul class="flex gap-[2.6rem]">   
+                                    <li><a href=""><img src="./img/purple.svg" alt=""><span class="text-[#AF2796]">WEB PLAYBACK SDK</span></a></li>
+                                    <li><a href=""><img src="./img/blue.svg" alt=""><span class="text-[#509bf5]">IOS</span></a></li>
+                                    <li><a href=""><img src="./img/pink.svg" alt=""><span class="text-[#f573a0]">ANDROID</span></a></li>
+                                    <li><a href=""><img src="./img/red.svg" alt=""><span class="text-[#ff4632]">EMBEDS</span></a></li>             
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="explore__content">
+                        <h2>Music Metadata</h2>
+                        <p>To allow users to search songs, artists, and playlists, set up the metadata features with our Web API.</p>
+                        <div class="explore__icon py-[3rem]">
+                            <ul class="flex">   
+                                    <li><a href=""><img src="./img/yellow.svg" alt=""><span class="text-[#f59b23]">WEB API</span></a></li>             
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="explore__content">
+                        <h2>User Data</h2>
+                        <p>To access user data like saved tracks and albums, set up the accessibility with our Web API.</p>
+                        <div class="explore__icon py-[3rem]">
+                            <ul class="flex">   
+                                <li><a href=""><img src="./img/yellow.svg" alt=""><span class="text-[#f59b23]">WEB API</span></a></li>           
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="explore__content">
+                        <h2>Spotify Connect</h2>
+                        <p>Set up Spotify Connect with our Web API to let users control Spotify on speakers, TVs, and other devices.</p>
+                        <div class="explore__icon py-[3rem]">
+                            <ul class="flex gap-[2.6rem]">   
+                                <li><a href=""><img src="./img/yellow.svg" alt=""><span class="text-[#f59b23]">WEB API</span></a></li>   
+                                <li><a href=""><img src="./img/green.svg" alt=""><span class="text-[#00a575]">COMMERCIAL HARDWARE</span></a></li>           
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="explore__content">
+                        <h2>Personalization</h2>
+                        <p>Make it personal! To explore the music listening of users, set up personalized data with the Web API.</p>
+                        <div class="explore__icon py-[3rem]">
+                            <ul class="flex justify-between">   
+                                <li><a href=""><img src="./img/yellow.svg" alt=""><span class="text-[#f59b23]">WEB API</span></a></li>             
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

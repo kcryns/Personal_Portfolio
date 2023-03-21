@@ -171,7 +171,7 @@
         @apply text-[#ffffff] hover:text-green text-[14px]
     }
     .navigation2 ul li{
-        @apply ml-[4.5rem]
+        @apply ml-[4.5rem] lg:py-[1.5rem]
     }
 
 
@@ -186,7 +186,50 @@
         @apply w-[7.5rem] h-[7.5rem] mb-[1.2rem] rounded-full flex justify-center items-center
     }
     .platform__content .backg img{
-        @apply w-[4rem]
+        @apply w-[4rem] h-[4rem]
     }
-    
+
+    .docs__content{
+        @apply bg-[#222326] top-[4.5rem] left-[0] w-[120rem] h-0 overflow-hidden
+    }
+    .docs:hover .docs__content{
+        @apply h-[20rem] ease-in duration-[300ms]
+    }
+    .content__group ul li{
+        @apply ml-[unset] py-[unset]
+    }
+
+    .community__content{
+        @apply bg-[#222326] top-[4.5rem] left-[0] w-[120rem] h-0 overflow-hidden
+    }
+    .community:hover .community__content{
+        @apply h-[10rem] ease-in duration-[300ms]
+    }
+
+    .use__content{
+        @apply bg-[#222326] top-[4.5rem] left-[0] w-[120rem] h-0 overflow-hidden
+    }
+    .use:hover .use__content{
+        @apply h-[17rem] ease-in duration-[300ms]
+    }
+
+
+
+
+
+    .explore__content h2{
+        @apply text-[2rem] font-bold
+    }
+    .explore__content p{
+        @apply text-[1rem]
+    }
+    .explore__icon span{
+        @apply text-[14px] font-bold 
+    }
+    .explore__icon img{
+        @apply mx-auto w-[2.5rem]
+    }
+    .explore__content h2{
+        @apply lg:text-[3rem] text-[#222326]
+    }
   }
