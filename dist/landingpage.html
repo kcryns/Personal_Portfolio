@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karl - Portfolio</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script
+      src="https://kit.fontawesome.com/b2cb6cdadd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header relative bg-[#0EA2A6] z-10">
+      <div class="container">
+        <div
+          class="header__wrapper flex items-center py-[1rem] justify-between"
+        >
+          <img
+            src="./img/Logo.png"
+            alt=""
+            class="w-[3.3rem] h-[3.3rem] lg:w-[4rem] lg:h-[4rem]"
+          />
+          <div class="toggle__menu lg:hidden">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div
+            class="navigation absolute top-[5.3rem] bg-[rgb(0,0,0,.2)] w-[100%] h-[91vh] flex justify-end lg:static lg:bg-transparent lg:w-auto lg:h-auto"
+          >
+            <ul
+              class="w-[70%] bg-white pt-[3rem] h-[91vh] lg:flex lg:h-auto lg:pt-0 lg:bg-transparent lg:w-auto"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">Skills</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Project</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="banner bg-[#0ea2a6] h-[91vh] text-center overflow-hidden relative -z-20"
+    >
+      <div class="container">
+        <div class="banner__wrapper">
+          <div
+            class="circle h-[40rem] w-[40rem] rounded-[50%] border-[rgb(250,250,250,.7)] border-[5px] absolute top-[-18rem] right-[-20rem] -z-10"
+          ></div>
+          <img src="./img/Banner.png" alt="" class="w-[17.5rem] mx-auto" />
+          <ul class="flex justify-center">
+            <li>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+            </li>
+          </ul>
+          <h1
+            class="uppercase text-white text-[2.3rem] font-[650] border-b-[3px] max-w-[25rem] mx-auto"
+          >
+            <span class="text-black">I am</span> Karl Cydrick
+          </h1>
+          <h2 class="uppercase text-white font-[700] leading-[2.5rem]">
+            UI/UX designer <span class="text-black">and</span> Web developer
+          </h2>
+          <p
+            class="text-white text-justify text-[1.1rem] leading-[2.3rem] max-w-[25rem] mx-auto mt-[2rem]"
+          >
+            At 22 years old, I am a passionate web developer eager to create
+            dynamic and engaging website that captive user and deliver impactful
+            result. My goal is to become a skilled professional in the field.
+          </p>
+          <a href="" class="btn font-[600] text-[1.4rem] mt-[3rem]">Hire Me</a>
+          <div class="circle2">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
