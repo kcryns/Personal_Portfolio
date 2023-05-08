@@ -11,6 +11,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 @layer components {
@@ -18,7 +19,7 @@ html {
     display: inline-block;
     background-color: white;
     padding: 0.5rem 0;
-    border-radius: 1.5rem;
+    border-radius: 2.5rem;
     color: #0ea2a6;
   }
 
@@ -46,7 +47,7 @@ html {
     @apply translate-x-0 translate-y-[-6px] rotate-[-225deg] ease-out duration-[.5];
   }
   .header .navigation ul li a {
-    @apply text-white text-[1.5rem] font-[600] py-[1rem] block lg:py-0 lg:font-[400] lg:text-[1.3rem];
+    @apply text-white text-[1.5rem] font-[600] py-[1rem] block lg:py-0 lg:font-[400] lg:text-[1.3rem] hover:text-[black] ease-in duration-200;
   }
   .header .navigation ul li {
     @apply bg-[#0EA2A6] text-center my-[1rem] lg:ml-[3rem];
@@ -62,7 +63,7 @@ html {
     @apply text-white text-[1.2rem] lg:text-[1.5rem];
   }
   .banner ul li {
-    @apply w-[2rem] h-[2rem] mx-[.3rem] bg-[#0EA2A6] rounded-[50%] lg:w-[3rem] lg:h-[3rem] lg:flex lg:justify-center lg:items-center;
+    @apply w-[2rem] h-[2rem] mx-[.3rem] bg-[#0EA2A6] rounded-[50%] lg:w-[3rem] lg:h-[3rem] lg:flex lg:justify-center lg:items-center hover:translate-y-[-1rem] ease-in duration-[300ms];
   }
   .banner ul li {
     box-shadow: 0px 4px 4px 0 rgb(0, 0, 0, 0.25);
@@ -133,5 +134,70 @@ html {
   }
   .services .services__card__content a {
     @apply font-[700] text-[1.1rem] hover:text-[#0ea2a6] ease-in duration-[100ms];
+  }
+
+  .projects .projects__nav ul li {
+    @apply border-y-[3px] border-[rgb(0,0,0,.5)] hover:text-[#0ea2a6] hover:border-[#0ea2a6] ease-in duration-[100ms];
+  }
+  .projects .projects__nav .active {
+    @apply text-[#0ea2a6] border-[#0ea2a6];
+  }
+  .projects .projects__nav ul li a {
+    @apply text-[1.3rem] font-[500] px-[1rem];
+  }
+  .projects .projects__card {
+    @apply bg-[#0ea2a6] w-[21.8rem] h-[25.5rem] rounded-[1rem] mx-auto;
+  }
+  .projects .projects__card h3 {
+    @apply text-[2rem] font-[700] mt-[1rem];
+  }
+  .projects .projects__card h4 {
+    @apply text-[1.5rem] font-[600] ml-2;
+  }
+  .projects__content {
+    @apply relative flex justify-center min-h-[48vh];
+  }
+  .projects__content .project-tab__content {
+    @apply absolute opacity-0;
+  }
+  .projects__content .project-tab__content.active {
+    @apply opacity-100 ease-in duration-300;
+  }
+  .tns-outer button,
+  [role="stop"] {
+    @apply hidden;
+  }
+
+  .contact .contact__left ul li {
+    @apply text-[white] flex items-center my-[2rem];
+  }
+  .contact .contact__left ul li a {
+    @apply border-[3px] border-white w-[3rem] h-[3rem] rounded-[50%] text-[1.5rem] text-center flex justify-center items-center;
+  }
+  .contact .contact__left ul li p {
+    @apply ml-[1.5rem] text-[rgb(250,250,250,.8)] text-[1.2rem] font-[600];
+  }
+  .contact__right input[type="text"],
+  input[type="email"],
+  textarea {
+    @apply w-[100%] bg-transparent border-b-[3px] border-[rgb(250,250,250,.7)] p-[1.5rem] outline-none text-white;
+  }
+  .contact__right input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  textarea::placeholder {
+    @apply text-[rgb(250,250,250,.7)];
+  }
+
+  .footer {
+    box-shadow: -4px 0 7px 3px rgb(0, 0, 0, 0.35);
+  }
+  .footer ul li a {
+    @apply text-white text-[1.2rem] lg:text-[1.5rem];
+  }
+  .footer ul li {
+    @apply w-[2rem] h-[2rem] mx-[.3rem] bg-[#0EA2A6] rounded-[50%] lg:w-[3rem] lg:h-[3rem] flex justify-center items-center hover:translate-y-[-1rem] ease-in duration-[300ms];
+  }
+  .footer ul li {
+    box-shadow: 0px 4px 4px 0 rgb(0, 0, 0, 0.25);
   }
 }
