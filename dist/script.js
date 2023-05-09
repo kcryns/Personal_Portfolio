@@ -1,3 +1,13 @@
+const btop = document.querySelector(".backtotop");
+window.addEventListener("scroll", () => {
+  console.log(window.pageYOffset);
+  if (window.pageYOffset >= 200) {
+    btop.classList.add("show");
+  } else {
+    btop.classList.remove("show");
+  }
+});
+
 const toggleMenu = document.querySelector(".toggle__menu");
 const headerNav = document.querySelector(".navigation");
 const closing = document.querySelector(".navigation ul li a");
@@ -10,9 +20,9 @@ actclosing.forEach((sara) => {
   sara.addEventListener("click", () => {
     removeActiveclose();
     sara.classList.add("active");
-    headerBot.classList.remove("open");
+    headerNav.classList.remove("open");
     toggleMenu.classList.remove("open");
-    headerBot.style = "transition: .5s ease";
+    headerNav.style = "transition: .5s ease";
   });
 });
 function removeActiveclose() {

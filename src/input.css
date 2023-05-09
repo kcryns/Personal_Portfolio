@@ -12,6 +12,10 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+body {
+  position: relative;
 }
 
 @layer components {
@@ -21,6 +25,16 @@ html {
     padding: 0.5rem 0;
     border-radius: 2.5rem;
     color: #0ea2a6;
+  }
+
+  .backtotop {
+    @apply fixed z-20 top-[58rem] right-[1.9rem] border-[1px] border-black backdrop-blur-sm rounded-[50%] opacity-0 ease-in duration-300 lg:hidden;
+  }
+  .backtotop.show {
+    @apply opacity-100 top-[54rem] ease-in duration-300;
+  }
+  .backtotop a span {
+    @apply text-[2rem] font-[900] flex justify-center items-center h-[3rem] w-[3rem];
   }
 
   .header {
@@ -51,6 +65,9 @@ html {
   }
   .header .navigation ul li {
     @apply bg-[#0EA2A6] text-center my-[1rem] lg:ml-[3rem];
+  }
+  .header .navigation ul li .active {
+    @apply text-black;
   }
   .header .navigation {
     @apply right-[-100%] ease-in duration-[300ms];
@@ -146,7 +163,7 @@ html {
     @apply text-[1.3rem] font-[500] px-[1rem];
   }
   .projects .projects__card {
-    @apply bg-[#0ea2a6] w-[21.8rem] h-[25.5rem] rounded-[1rem] mx-auto;
+    @apply bg-[#0ea2a6] max-w-[21.8rem] h-[25.5rem] rounded-[1rem] lg:mx-[1.6rem];
   }
   .projects .projects__card h3 {
     @apply text-[2rem] font-[700] mt-[1rem];
@@ -155,10 +172,13 @@ html {
     @apply text-[1.5rem] font-[600] ml-2;
   }
   .projects__content {
-    @apply relative flex justify-center min-h-[48vh];
+    @apply flex justify-center;
   }
   .projects__content .project-tab__content {
-    @apply absolute opacity-0;
+    @apply absolute opacity-0 max-w-[21.8rem] lg:max-w-[75rem];
+  }
+  .projects__content .project-tab__content:nth-child(3) {
+    @apply lg:max-w-[65rem];
   }
   .projects__content .project-tab__content.active {
     @apply opacity-100 ease-in duration-300;
@@ -200,4 +220,11 @@ html {
   .footer ul li {
     box-shadow: 0px 4px 4px 0 rgb(0, 0, 0, 0.25);
   }
+}
+
+.tns-nav {
+  @apply absolute bottom-[-2rem] flex justify-center items-center z-20;
+}
+.tns-nav button {
+  @apply h-[1rem] w-[1rem] bg-[#0ea2a6];
 }

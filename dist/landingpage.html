@@ -17,40 +17,47 @@
     />
   </head>
   <body>
-    <header class="header relative bg-[#0EA2A6] z-10">
-      <div class="container">
-        <div
-          class="header__wrapper flex items-center py-[1rem] justify-between"
-        >
-          <img
-            src="./img/Logo.png"
-            alt=""
-            class="w-[3.3rem] h-[3.3rem] lg:w-[4rem] lg:h-[4rem]"
-          />
-          <div class="toggle__menu lg:hidden">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+    <div class="backtotop">
+      <a href="#banner"
+        ><span><i class="fa-solid fa-chevron-up"></i></span
+      ></a>
+    </div>
+    <header class="header fixed bg-[#0EA2A6] w-[100%] z-10">
+      <div class="relative px-0">
+        <div class="container">
           <div
-            class="navigation absolute top-[5.3rem] bg-[rgb(0,0,0,.2)] w-[100%] h-[91vh] flex justify-end lg:static lg:bg-transparent lg:w-auto lg:h-auto"
+            class="header__wrapper flex items-center py-[1rem] justify-between"
           >
-            <ul
-              class="w-[70%] bg-white pt-[3rem] h-[91vh] lg:flex lg:h-auto lg:pt-0 lg:bg-transparent lg:w-auto"
+            <img
+              src="./img/Logo.png"
+              alt=""
+              class="w-[3.3rem] h-[3.3rem] lg:w-[4rem] lg:h-[4rem]"
+            />
+            <div class="toggle__menu lg:hidden">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div
+              class="navigation absolute top-[5.3rem] bg-[rgb(0,0,0,.2)] w-[100%] h-[91vh] flex justify-end lg:static lg:bg-transparent lg:w-auto lg:h-auto"
             >
-              <li><a href="#banner" class="closed active">Home</a></li>
-              <li><a href="#skill" class="closed">Skills</a></li>
-              <li><a href="#service" class="closed">Services</a></li>
-              <li><a href="#project" class="closed">Project</a></li>
-              <li><a href="#contact" class="closed">Contact</a></li>
-            </ul>
+              <ul
+                class="w-[70%] bg-white pt-[3rem] h-[91vh] lg:flex lg:h-auto lg:pt-0 lg:bg-transparent lg:w-auto"
+              >
+                <li><a href="#banner" class="closed active">Home</a></li>
+                <li><a href="#skill" class="closed">Skills</a></li>
+                <li><a href="#service" class="closed">Services</a></li>
+                <li><a href="#project" class="closed">Project</a></li>
+                <li><a href="#contact" class="closed">Contact</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <section
       id="banner"
-      class="banner bg-[#0ea2a6] h-[91vh] text-center overflow-hidden relative lg:flex lg:items-center"
+      class="banner bg-[#0ea2a6] h-[100vh] pt-[6rem] text-center overflow-hidden relative lg:flex lg:items-center"
     >
       <div class="container">
         <div
@@ -320,7 +327,7 @@
           >
             <span class="text-black">My</span> Projects
           </h2>
-          <div class="projects__tab">
+          <div class="projects__tab h-[33rem]">
             <div class="projects__nav py-[2rem] relative">
               <ul class="flex">
                 <li id="project-1" class="project__nav active">
@@ -338,10 +345,7 @@
               </ul>
             </div>
             <div class="projects__content">
-              <div
-                id="project-1-content"
-                class="project-tab__content active max-w-[21.8rem] lg:max-w-none"
-              >
+              <div id="project-1-content" class="project-tab__content active">
                 <div class="slider_1">
                   <div class="projects__card">
                     <div class="projects__card__content p-[1.2rem]">
@@ -362,8 +366,8 @@
                   </div>
                   <div class="projects__card">
                     <div class="projects__card__content p-[1.2rem]">
-                      <img src="./img/foodfactory-card.png" alt="" />
-                      <h3>Food Factory</h3>
+                      <img src="./img/wondertour-card.png" alt="" />
+                      <h3>Wonder Tour</h3>
                       <div class="flex justify-between items-center mt-[3rem]">
                         <div class="logo_text flex items-center">
                           <img src="./img/sass-card-logo.png" alt="" />
@@ -379,8 +383,8 @@
                   </div>
                   <div class="projects__card">
                     <div class="projects__card__content p-[1.2rem]">
-                      <img src="./img/foodfactory-card.png" alt="" />
-                      <h3>Food Factory</h3>
+                      <img src="./img/vsc-card.png" alt="" />
+                      <h3>Visual Studio Code</h3>
                       <div class="flex justify-between items-center mt-[3rem]">
                         <div class="logo_text flex items-center">
                           <img src="./img/sass-card-logo.png" alt="" />
@@ -396,8 +400,8 @@
                   </div>
                   <div class="projects__card">
                     <div class="projects__card__content p-[1.2rem]">
-                      <img src="./img/foodfactory-card.png" alt="" />
-                      <h3>Food Factory</h3>
+                      <img src="./img/spotify-card.png" alt="" />
+                      <h3>Spotify</h3>
                       <div class="flex justify-between items-center mt-[3rem]">
                         <div class="logo_text flex items-center">
                           <img src="./img/sass-card-logo.png" alt="" />
@@ -456,9 +460,9 @@
                   </div>
                   <div class="projects__card">
                     <div class="projects__card__content p-[1.2rem]">
-                      <img src="./img/theblog-card.png" alt="" />
-                      <h3>The Blog</h3>
-                      <div class="flex justify-between items-center mt-[3rem]">
+                      <img src="./img/cvd-card.png" alt="" />
+                      <h3 class="leading-[2rem]">Creative Visual Design</h3>
+                      <div class="flex justify-between items-center mt-[2rem]">
                         <div class="logo_text flex items-center">
                           <img src="./img/wordpress-card-logo.png" alt="" />
                           <h4>Wordpress</h4>
@@ -612,8 +616,9 @@
         autoplayButton: false,
         responsive: {
           900: {
-            items: 4,
-            autoplay: false,
+            items: 3,
+            slideBy: 1,
+            center: true,
           },
         },
       });
@@ -628,6 +633,12 @@
         nav: true,
         autoplayPosition: false,
         autoplayButton: false,
+        responsive: {
+          900: {
+            items: 3,
+            slideBy: true,
+          },
+        },
       });
     </script>
     <script src="./script.js"></script>
