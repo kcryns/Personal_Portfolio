@@ -222,9 +222,32 @@ body {
   }
 }
 
-.tns-nav {
-  @apply absolute bottom-[-2rem] flex justify-center items-center z-20;
+.project-tab__content:nth-child(1) .tns-nav {
+  @apply absolute bottom-[-2rem] left-[32%] flex justify-center items-center z-20 lg:hidden;
 }
-.tns-nav button {
-  @apply h-[1rem] w-[1rem] bg-[#0ea2a6];
+.project-tab__content:nth-child(1) .tns-nav button {
+  @apply h-[1rem] w-[1rem] bg-white block mx-[.5rem];
+}
+
+.project-tab__content:nth-child(1) .tns-nav button {
+  box-shadow: inset 0px 0px 3px 1px rgb(0, 0, 0, 0.5);
+}
+
+.project-tab__content:nth-child(1) .tns-nav .tns-nav-active {
+  @apply bg-[#0ea2a6] shadow-none;
+}
+
+.project-tab__content:nth-child(3) .tns-nav {
+  @apply absolute bottom-[-2rem] left-[42%] flex justify-center items-center z-20 lg:hidden;
+}
+.project-tab__content:nth-child(3) .tns-nav button {
+  @apply h-[1rem] w-[1rem] bg-white block mx-[.5rem];
+}
+
+.project-tab__content:nth-child(3) .tns-nav button {
+  box-shadow: inset 0px 0px 3px 1px rgb(0, 0, 0, 0.5);
+}
+
+.project-tab__content:nth-child(2) .tns-nav .tns-nav-active {
+  @apply bg-[#0ea2a6] shadow-none;
 }
